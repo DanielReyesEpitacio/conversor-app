@@ -5,9 +5,8 @@ const Home = ({navigation})=>{
     return(
         <View>
             <Button onPress={()=>{
-                navigation.navigate('PesoDolar');
-            }} title="Ir a PESO-DOLAR"/>
-            <Button title="ir a DOLAR-PESO" onPress={()=>{navigation.navigate('DolarPeso')}} />
+                navigation.navigate('Conversor', {buttonId:1, text: 'holi'});
+            }} title="Ir a peso - dolar"/>
         </View>
     );
 }

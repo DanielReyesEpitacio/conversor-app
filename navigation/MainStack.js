@@ -1,9 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import DolarPeso from '../screens/DolarPeso';
 import Home from '../screens/Home';
-import PesoDolar from '../screens/PesoDolar';
+import Conversor from '../screens/Conversor';
 
 const Stack = createNativeStackNavigator();
 const MainStack = () => {
@@ -16,13 +15,10 @@ const MainStack = () => {
                     component = {Home}
                 />
                 <Stack.Screen 
-                    name='PesoDolar'
-                    component={PesoDolar}
+                    name='Conversor'
+                    component={Conversor}
                 />
-                <Stack.Screen 
-                    name='DolarPeso'
-                    component={DolarPeso}
-                />
+
             </Stack.Navigator>
         </NavigationContainer>
     )

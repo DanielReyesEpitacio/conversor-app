@@ -1,13 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { StyleSheet} from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import MainStack from './navigation/MainStack';
 
 export default function App() {
   return (
-    <SafeAreaView style={{flex:1}}>
-      <MainStack />
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <SafeAreaView>
+        <MainStack />
+      </SafeAreaView>
+    </SafeAreaProvider>
+
 
   );
 }
